@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi.csproj", "{BCBDD5E9-02F3-47D5-8926-BD1403167B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0620EFBD-949F-4791-B2CF-3CDFBB12A162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0620EFBD-949F-4791-B2CF-3CDFBB12A162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0620EFBD-949F-4791-B2CF-3CDFBB12A162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0620EFBD-949F-4791-B2CF-3CDFBB12A162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBDD5E9-02F3-47D5-8926-BD1403167B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBDD5E9-02F3-47D5-8926-BD1403167B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBDD5E9-02F3-47D5-8926-BD1403167B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBDD5E9-02F3-47D5-8926-BD1403167B59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

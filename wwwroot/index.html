@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-do CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col" align="center" >
+            <br><h1>To-do List✏️</h1>
+          </div>
+        </div>
+        <div class="mb-3 row justify-content-md-center">
+            <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                <div class="col-auto" align="center">
+                    <input class="form-control" type="text" id="add-name" placeholder="New to-do"><br>
+                </div>
+                <div class="col-auto" align="center">
+                    <input type="submit" class="btn btn-primary col-3 mx-auto" value="Add">
+                </div>
+            </form>
+        </div>
+        <div class="mt-4 row justify-content-md-center">
+            <div class="col-auto" align="center">
+                <p id="counter">1 to-do</p>
+                <table class="table table-striped">
+                    <tbody><tr>
+                        <th>Is Complete?</th>
+                        <th>Name</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </tbody><tbody id="todos"><tr><td><input type="checkbox" disabled=""></td><td>1</td><td><button onclick="displayEditForm(4)">Edit</button></td><td><button onclick="deleteItem(4)">Delete</button></td></tr></tbody>
+                </table>
+
+                <div id="editForm" style="display:none;">
+                    <h3>Edit</h3>
+                    <form action="javascript:void(0);" onsubmit="updateItem()">
+                        <input type="hidden" id="edit-id">
+                        <input type="checkbox" id="edit-isComplete">
+                        <input type="text" id="edit-name">
+                        <input type="submit" value="Save">
+                        <a onclick="closeInput()" aria-label="Close">✖</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <script src="js/site.js" asp-append-version="true"></script>
+      <script type="text/javascript">
+          getItems();
+      </script> 
+
+    <!-- <h1>To-do CRUD</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-name" placeholder="New to-do">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="checkbox" id="edit-isComplete">
+            <input type="text" id="edit-name">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Is Complete?</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script> -->
+</body>
+</html>
